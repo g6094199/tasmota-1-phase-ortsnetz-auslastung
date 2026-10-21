@@ -1,0 +1,4 @@
+Timezone 0
+TelePeriod 300
+Rule1 ON Tele-Energy#Voltage DO WebQuery https://www.ortsnetz-auslastung.de/v1/measurements POST [Content-Type:application/json]{"observed_at":"%timestamp%Z","latitude":52.520008,"longitude":13.404954,"l1_v":%value%,"l2_v":-1,"l3_v":-1,"integration_version":"tasmota-rule-1.0"} ENDON
+Rule1 1
